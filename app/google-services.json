@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "194093341024",
+    "firebase_url": "https://ndcircle-5a25b.firebaseio.com",
+    "project_id": "ndcircle-5a25b",
+    "storage_bucket": "ndcircle-5a25b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194093341024:android:fd89a85c3ee5b979",
+        "android_client_info": {
+          "package_name": "kr.ms.neungdong.showcase.neungdongcircleapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "194093341024-sef51b52ecaujqv9f66felijb98aohaa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kr.ms.neungdong.showcase.neungdongcircleapp",
+            "certificate_hash": "5afc7ae3a526130d35358519200f97ce22ae08c3"
+          }
+        },
+        {
+          "client_id": "194093341024-4q7ev7s0vbdi838icr4ufi16ro51b1af.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHAFSmCgMjeE_Tm7a296VCqRmB7ERqDt8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "194093341024-4q7ev7s0vbdi838icr4ufi16ro51b1af.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
