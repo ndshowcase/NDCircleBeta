@@ -26,6 +26,7 @@ import android.os.Message;
 import android.preference.PreferenceManager;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
+import android.support.annotation.Nullable;
 import android.support.v4.content.LocalBroadcastManager;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -118,6 +119,7 @@ public class MainActivity extends Activity {
     String userAgent;
     String sort;
     String address;
+    String dailycheck;
     boolean socialnow=false;
     boolean socialnow2=false;
     boolean sync_proc=false;
@@ -125,7 +127,7 @@ public class MainActivity extends Activity {
     ImageButton btnBack;
     ImageButton btnForward;
     ImageButton Gohome;
-    ImageButton Refresh;
+    ImageButton btnCheck;
     ImageButton Login;
     ImageButton Setting;
     ImageButton Finish;
@@ -213,6 +215,7 @@ public class MainActivity extends Activity {
         intent33 = new Intent(this, Sendserver.class);
 
         URL_home = QuickstartPreferences.URL_home;
+        dailycheck = QuickstartPreferences.dailycheck;
         socialxe2015 = QuickstartPreferences.socialxe2015;
         socialxe = QuickstartPreferences.socialxe;
         socialserver = QuickstartPreferences.socialserver;
@@ -273,6 +276,8 @@ public class MainActivity extends Activity {
         Setting.setOnTouchListener(btnTouchListener);
         Finish = (ImageButton) findViewById(R.id.finish);
         Finish.setOnTouchListener(btnTouchListener);
+        btnCheck = (ImageButton) findViewById(R.id.btncheck);
+        btnCheck.setOnTouchListener(btnTouchListener);
         mWebView = (WebView) findViewById(R.id.webview);
         mLoadingProgressBar = (ProgressBar) findViewById(R.id.progressbar_Horizontal);
         customViewContainer = (FrameLayout) findViewById(R.id.customViewContainer);
@@ -367,6 +372,14 @@ public class MainActivity extends Activity {
                 mWebView.loadUrl(URL_home);
             }
         });
+
+        btnCheck.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mWebView.loadUrl(dailycheck);
+            }
+        });
+
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

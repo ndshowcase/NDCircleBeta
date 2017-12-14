@@ -114,6 +114,15 @@
                 <ImageButton
                     android:layout_width="30dp"
                     android:layout_height="30dp"
+                    android:id="@+id/btncheck"
+                    android:src="@drawable/check"
+                    android:layout_marginRight="@dimen/bar_margin"
+                    android:scaleType="fitXY"
+                    android:background="@null" />
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:id="@+id/setting"
                     android:src="@drawable/setting2"
                     android:layout_marginRight="@dimen/bar_margin"

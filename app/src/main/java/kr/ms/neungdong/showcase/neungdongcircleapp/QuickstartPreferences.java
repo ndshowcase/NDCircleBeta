@@ -20,6 +20,7 @@ public class QuickstartPreferences {
 
 	public static final String URL_home = "http://circle2008.dothome.co.kr/";
 	public static final String layout_sort = "1";
+	public static final String dailycheck = "http://circle2008.dothome.co.kr/attendance";
 
 	//socialxe2005 conory
 	public static final boolean socialxe2015 = false;
