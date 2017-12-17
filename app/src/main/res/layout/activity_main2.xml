@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
     tools:context="kr.ms.neungdong.showcase.neungdongcircleapp.Main2Activity">
-
     <TextView
         android:id="@+id/txt"
         android:layout_width="wrap_content"
@@ -18,15 +17,11 @@
         android:textColor="#FFFFFF"
         android:textSize="60sp" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|center"
-        android:layout_weight="1"
-        android:paddingBottom="10dp"
-        android:text="BETA 0.9"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:textStyle="italic" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/logo" />
 </FrameLayout>
